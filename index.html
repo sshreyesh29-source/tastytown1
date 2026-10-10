@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TastyTown | Food & Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        TASTY<span>TOWN</span>
+    </a>
+
+    <nav>
+        <a class="active" href="#home">Main page</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About us</a>
+        <a href="mailto:your@email.com">CONTACT US</a>
+    </nav>
+
+    <a href="#menu" class="cart">
+    🛒
+    <span>0</span>
+</a> 
+
+<div class="cart-panel" id="cartPanel">
+
+    <button class="close-cart" id="closeCart">×</button>
+
+    <h3>Your Order</h3>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+        Total: ₹<span id="cartTotal">0</span>
+    </div>
+
+    <button class="clear-cart" id="clearCart">
+        CLEAR CART
+    </button>
+
+    <input
+        type="text"
+        id="customerName"
+        class="order-input"
+        placeholder="Your name"
+    >
+
+    <textarea
+        id="customerAddress"
+        class="order-input"
+        placeholder="Delivery address"
+        rows="3"
+    ></textarea>
+
+    <button class="place-order" id="placeOrder">
+        PLACE ORDER
+    </button>
+
+</div>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-background"></div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                TASTYTOWN RESTAURANT
+            </p>
+
+            <h1>
+                Fresh food.
+                <br>
+                <span>Made with love.</span>
+            </h1>
+
+            <p class="description">
+                Delicious food made fresh every day.
+                From juicy burgers and crispy fries to
+                pizza, pasta and sweet desserts.
+            </p>
+
+            <a href="#menu" class="order-button">
+                VIEW MENU
+                <span>→</span>
+            </a>
+
+            <div class="hero-info">
+
+                <div class="info-item">
+                    <div class="info-icon">⌖</div>
+
+                    <div>
+                        <small>LOCATION</small>
+                        <p>India</p>
+                    </div>
+                </div>
+
+                <div class="vertical-line"></div>
+
+                <div class="info-item">
+                    <div class="info-icon">◷</div>
+
+                    <div>
+                        <small>OPENING HOURS</small>
+                        <p>10 AM — 10 PM</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="brand-signature">
+            TastyTown
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+
+    <section class="menu" id="menu">
+
+        <div class="menu-heading">
+
+            <div>
+                <p class="eyebrow">CUSTOMER FAVOURITES</p>
+
+                <h2>
+                    Our <span>Menu</span>
+                </h2>
+            </div>
+
+            <p>
+                Discover our most-loved dishes,
+                prepared fresh and served with flavour.
+            </p>
+
+        </div>
+
+
+        <div class="food-grid">
+
+            <article class="food-card">
+
+                <img src="images/burger.jpg" alt="Classic Burger">
+
+                <div class="food-content">
+                    <div>
+                        <h3>Classic Burger</h3>
+                        <p>Juicy beef & fresh vegetables</p>
+                    </div>
+
+                    <strong>₹199</strong>
+                </div>
+
+                <button>Add</button>
+
+            </article>
+
+
+            <article class="food-card">
+
+                <img src="images/pizza.jpg" alt="Pizza">
+
+                <div class="food-content">
+                    <div>
+                        <h3>Cheese Pizza</h3>
+                        <p>Fresh cheese & tomato sauce</p>
+                    </div>
+
+                    <strong>₹249</strong>
+                </div>
+
+                <button>Add</button>
+
+            </article>
+
+
+            <article class="food-card">
+
+                <img src="images/chicken.jpg" alt="Chicken">
+
+                <div class="food-content">
+                    <div>
+                        <h3>Grilled Chicken</h3>
+                        <p>Grilled chicken with herbs</p>
+                    </div>
+
+                    <strong>₹299</strong>
+                </div>
+
+                <button>Add</button>
+
+            </article>
+
+
+            <article class="food-card">
+
+                <img src="images/fries.jpg" alt="French Fries">
+
+                <div class="food-content">
+                    <div>
+                        <h3>Crispy Fries</h3>
+                        <p>Golden crispy fries</p>
+                    </div>
+
+                    <strong>₹99</strong>
+                </div>
+
+                <button>Add</button>
+
+            </article>
+
+
+            <article class="food-card">
+
+                <img src="images/pasta.jpg" alt="Pasta">
+
+                <div class="food-content">
+                    <div>
+                        <h3>Creamy Pasta</h3>
+                        <p>Rich Italian pasta</p>
+                    </div>
+
+                    <strong>₹229</strong>
+                </div>
+
+                <button>Add</button>
+
+            </article>
+
+
+            <article class="food-card">
+
+                <img src="images/wrap.jpg" alt="Chicken Wrap">
+
+                <div class="food-content">
+                    <div>
+                        <h3>Chicken Wrap</h3>
+                        <p>Chicken & fresh vegetables</p>
+                    </div>
+
+                    <strong>₹179</strong>
+                </div>
+
+                <button>Add</button>
+
+            </article>
+
+
+            <article class="food-card">
+
+                <img src="images/dessert.jpg" alt="Dessert">
+
+                <div class="food-content">
+                    <div>
+                        <h3>Sweet Dessert</h3>
+                        <p>Fresh delicious dessert</p>
+                    </div>
+
+                    <strong>₹149</strong>
+                </div>
+
+                <button>Add</button>
+
+            </article>
+
+
+            <article class="food-card">
+
+                <img src="images/drink.jpg" alt="Fresh Drink">
+
+                <div class="food-content">
+                    <div>
+                        <h3>Fresh Drink</h3>
+                        <p>Refreshing cold drink</p>
+                    </div>
+
+                    <strong>₹89</strong>
+                </div>
+
+                <button>Add</button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img src="images/chicken.jpg" alt="TastyTown food">
+        </div>
+
+        <div class="about-text">
+
+            <p class="eyebrow">ABOUT TASTYTOWN</p>
+
+            <h2>
+                Made fresh.
+                <br>
+                <span>Served with love.</span>
+            </h2>
+
+            <p>
+                TastyTown brings fresh ingredients,
+                bold flavours and delicious food together
+                in one place.
+            </p>
+
+        </div>
+
+    </section>
+
+
+  <!-- QR -->
+
+<section class="qr-section">
+
+    <div>
+
+        <p class="eyebrow">ORDER WITH YOUR PHONE</p>
+
+        <h2>
+            Scan.
+            <br>
+            <span>Order.</span>
+            <br>
+            Enjoy.
+        </h2>
+
+        <p class="qr-description">
+            Scan the QR code to visit TastyTown
+            and order your favourite food.
+        </p>
+
+    </div>
+
+    <div class="qr-box">
+
+        <div class="qr-placeholder">
+
+            <a
+                href="https://tastytown.example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://tastytown.example.com"
+                    alt="TastyTown QR Code"
+                >
+            </a>
+
+        </div>
+
+        <p>SCAN TO ORDER</p>
+
+    </div>
+
+</section>
+
+
+   <!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <p class="eyebrow">GET IN TOUCH</p>
+
+    <h2>
+        Let's eat
+        <br>
+        <span>together.</span>
+    </h2>
+
+    <div class="contact-grid">
+
+        <!-- PHONE -->
+        <div>
+            <small>PHONE</small>
+            <p>
+                <a href="tel:+919035398248">
+                    +91 90353 98248
+                </a>
+            </p>
+        </div>
+
+        <!-- EMAIL -->
+        <div>
+            <small>EMAIL</small>
+            <p>
+                <a href="mailto:sshreyesh29@gmail.com">
+                    sshreyesh29@gmail.com
+                </a>
+            </p>
+        </div>
+
+        <!-- LOCATION -->
+        <div>
+            <small>LOCATION</small>
+            <p>India</p>
+        </div>
+
+        <!-- WHATSAPP -->
+        <div>
+            <small>WHATSAPP</small>
+            <p>
+                <a
+                    href="https://wa.me/919035398248"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Chat on WhatsApp
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        TASTY<span>TOWN</span>
+    </div>
+
+    <p>Fresh food. Great taste.</p>
+
+    <small>
+        © 2026 TastyTown. All rights reserved.
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
